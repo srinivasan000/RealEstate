@@ -102,11 +102,32 @@ body {
   height: 100%;
 }
 .navbar-left .burger {
-  font-weight: bold;
-  font-size: 50px;
-  display: none;
-  cursor: pointer;
+ height:50px;
+width:60px;
+cursor:pointer;
+display:none;
 }
+
+.l1,.l2,.l3{
+height:15px;
+width:100%;
+margin-top:2px;
+background:var(--link,#ffff00);
+border-radius:2px;
+}
+
+.toggle1{
+transform:rotate(45deg) translate(12px,9px);
+}
+
+.toggle2{
+display:none;
+}
+
+.toggle3{
+transform:rotate(-45deg);
+}
+
 .navbar-links {
   width: 100%;
   display: flex;
@@ -557,6 +578,10 @@ body {
 }
 .detailtwo-nav button:hover {
   background: var(--nav-bg);
+}
+.detailtwo-content .title-btn{
+  display: flex;
+  flex-wrap: wrap;
 }
 #detailtwo-comments,
 #detailtwo-intrested {

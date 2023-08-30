@@ -11,7 +11,7 @@ const Banner = (props) => {
   ];
 
   return (
-    <div className="banner-container" id="top">
+    <div className="banner-container">
       <div className="flex">
         {category.map((el, i) => (
           <div className="card">

@@ -4,7 +4,7 @@ const Live = ({ properties }) => {
   return (
     <div className="live-container">
       <h1>Live Bidding...</h1>
-      <div className="top"><a href="#top">&uarr;</a></div>
+      <div className="top"><a href="#">&uarr;</a></div>
       <div className="flex">
         {properties
           .map((property, i) => (
