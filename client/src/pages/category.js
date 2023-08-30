@@ -56,7 +56,7 @@ const Category = () =>
     return (
         <div className="category-container">
           <Header />
-        <h1 className="category-title" id="top">{query.name} properties</h1>
+        <h1 className="category-title">{query.name} properties</h1>
         <Collect category={category} isLoading={isLoading} />
         <Footer />
         <Copyright/>

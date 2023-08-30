@@ -15,15 +15,20 @@ const Header = (props) => {
     <div className="header-container">
       <div className="navbar-container">
         <div className="navbar-left">
-          <h1
+          <div
             className="burger"
             onClick={() => {
               let nav = document.querySelector(".navbar-links");
+              let me=document.querySelector(".burger");
               nav.classList.toggle("menu");
+              me.children[0].classList.toggle("toggle1");
+me.children[1].classList.toggle("toggle2");
+me.children[2].classList.toggle("toggle3");
+
             }}
           >
-            🪟
-          </h1>
+ <div class="l1"></div><div class="l2"></div><div class="l3"></div>
+          </div>
           <ul className="navbar-links">
             <li>
               <a href="/home">HOME</a>

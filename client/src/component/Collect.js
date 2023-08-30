@@ -4,7 +4,7 @@ const Collect = ({category, isLoading})=>{
 
     return(
         <div className="collect-container">
-         <div className="top"><a href="#top">&uarr;</a></div>
+         <div className="top"><a href="#">&uarr;</a></div>
             {
                 isLoading ? (<p>Loading....</p>):(
                 (
