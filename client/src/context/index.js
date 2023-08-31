@@ -5,13 +5,14 @@ import {
   useContract,
   useMetamask,
   useContractWrite,
-  useContractRead,
+  useContractRead, // Corrected capitalization
   useContractEvents,
   // new hooks
   useDisconnect,
   useConnectionStatus,
   useSigner,
 } from "@thirdweb-dev/react";
+
 
 import { ethers } from "ethers";
 
@@ -274,21 +275,21 @@ export const StateContextProvider = ({ children }) => {
       console.log("failled on getUserPropertyfunction", err);
     }
   };
-
-  // 12.getUserReviews()
-  const getUserReviewsFunction = () => {
-    try {
-      const { data: getUserReviews } =  useContractRead(
+/*
+// 12.getUserReviews()
+const getUserReviewsFunction = () => {
+  try {
+    const { data: getUserReviews } =  useContractRead(
       contract, 
       "getUserReviews",
       [address]
-      );
-      return getUserReviews;
-    } catch (err) {
-      console.log("failed on getUserReviews", err);
-    }
-  };
-
+    );
+    return getUserReviews;
+  } catch (err) {
+    console.log("failed on getUserReviews", err);
+  }
+};
+*/
   // 13.totalProperty()
   const totalPropertyFunction = async () => {
     try {
@@ -339,7 +340,7 @@ export const StateContextProvider = ({ children }) => {
         getProductReviewsFunction,
         getPropertyFunction,
         getUserPropertiesFunction,
-        getUserReviewsFunction,
+        //getUserReviewsFunction,
         totalPropertyFunction,
         totalReviewsFunction,
         getHighestRatedProduct,

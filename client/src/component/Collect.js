@@ -12,7 +12,7 @@ const Collect = ({category, isLoading})=>{
                    {category?.map((property, i) => (
                          <div className="card">
               <div className="card-img">
-                <a href={`detail?property=${property.productId}`}>
+                <a href={`/detail?property=${property.productId}`}>
                   <img src={property.image} alt={property.title} />
                 </a>
               </div>
