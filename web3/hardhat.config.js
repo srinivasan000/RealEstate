@@ -1,13 +1,13 @@
 require("@matterlabs/hardhat-zksync-solc");
 
-const PRIVATE_KEY = "ac0974bec39a17e36ba4a6b4d238ff944bacb478cbed5efcae784d7bf4f2ff80";
+const PRIVATE_KEY =
+  "ac0974bec39a17e36ba4a6b4d238ff944bacb478cbed5efcae784d7bf4f2ff80";
 
 const RPC_URL = "https://rpc.ankr.com/polygon_mumbai";
 
-
 /** @type import('hardhat/config').HardhatUserConfig */
 module.exports = {
-defaultNetwork: "polygon_mumbai",
+  defaultNetwork: "polygon_mumbai",
   zksolc: {
     version: "1.3.9",
     compilerSource: "binary",
@@ -18,12 +18,12 @@ defaultNetwork: "polygon_mumbai",
     },
   },
   networks: {
-        hardhat: {
+    hardhat: {
       chainId: 80001,
     },
     polygon_mumbai: {
       url: RPC_URL,
-      accounts:[`0x${PRIVATE_KEY}`]
+      accounts: [`0x${PRIVATE_KEY}`],
     },
     zksync_testnet: {
       url: "https://zksync2-testnet.zksync.dev",
