@@ -14,7 +14,7 @@ const Active1 = ({ properties, totalReviews, popular }) => {
             <div className="items">
               <div className="img">
                 {" "}
-                <a href="#">
+                <a href={`/detail?property=${activity.productId}`}>
                   <img src={activity?.image} alt="image" />
                 </a>{" "}
               </div>
