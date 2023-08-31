@@ -46,7 +46,7 @@ const Live = ({ properties }) => {
               </div>
             </div>
           ))
-          .slice(0, 6)}
+          .slice(0, 6).reverse()}
       </div>
     </div>
   );

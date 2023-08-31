@@ -37,9 +37,8 @@ const DetailTwo = ({
                 intrested.style.display = "none";
               }}
             >
-              {parsedReviews?.length}
+             Comments: {parsedReviews?.length}
             </a>
-            <a href="#">share</a>
             {property?.owner === address && (
               <a
                 href="#updatePrice"
@@ -48,7 +47,7 @@ const DetailTwo = ({
                   update_price.style.display = "block";
                 }}
               >
-                update price
+                Update Price
               </a>
             )}
           </div>
@@ -58,7 +57,7 @@ const DetailTwo = ({
           <br />
           <p>Category : {property?.category}</p>
           <p>
-            Owner : 
+            Owner :
             <a href="">
               <b>{property?.owner.slice(0, 20)}...</b>
             </a>
@@ -124,9 +123,9 @@ const DetailTwo = ({
                   <img src={`/images/user-img-${i + 1}.jpg`} alt="image" />
                 </div>
                 <div className="review-content">
+                  <p>{review?.reviewer.slice(0, 35)}...</p>
                   <p>
-                    {review?.reviewer.slice(0, 35)}...</p>
-                    <p><span className="like" onClick={() => likeReviewCall()}>
+                    <span className="like" onClick={() => likeReviewCall()}>
                       &hearts;
                     </span>
                     {review?.likes}
@@ -146,7 +145,7 @@ const DetailTwo = ({
           <h3>Details...</h3>
           <div className="detail">
             <p>
-              Owner : 
+              Owner :
               <a href="">
                 <b>{property?.owner}</b>
               </a>
@@ -185,14 +184,32 @@ const DetailTwo = ({
           <p>
             Time Left : <Countdown date={Date.now() + 374343992323} />
           </p>
-
-          <button onClick={() => buyingProperty()}>
+{(property?.owner === address)?(
+    <a
+                href="#updatePrice"
+                onClick={() => {
+                  let update_price = document.querySelector("#updatePrice");
+                  update_price.style.display = "block";
+                }}
+              >
+               <button>Update Price</button>
+              </a>
+):(
+<button onClick={() =>{ 
+  if(property?.price > 0){
+  buyingProperty()
+  }else{
+    alert("This Property Not For Sales");
+  }
+}}>
             {buyLoading ? (
               <p>loading...</p>
             ) : (
               `${property?.price} MATIC Buy Property`
             )}
           </button>
+          
+)} 
           <a href="#createReview">
             <button>Add Comment</button>
           </a>
