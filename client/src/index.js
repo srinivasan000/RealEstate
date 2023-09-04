@@ -15,6 +15,7 @@ import {
   Update,
   Active,
   Category,
+  About
 } from "./pages/";
 
 // This is the chain your dApp will work on.
@@ -41,6 +42,7 @@ ReactDOM.render(
             <Route path="/category/rental" element={<Category />} />
             <Route path="/category/commercial" element={<Category />} />
             <Route path="/category/country" element={<Category />} />
+            <Route path="/about" element={<About />} />
           </Routes>
         </BrowserRouter>
       </StateContextProvider>

@@ -12,6 +12,12 @@
       "type": "image/png",
       "sizes": "192x192"
     },
+      {
+      "src": "maskable.png",
+      "type": "image/png",
+      "sizes": "192x192",
+      "purpose": "any maskable"
+    },
     {
       "src": "Icon-512.png",
       "type": "image/png",
