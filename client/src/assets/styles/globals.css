@@ -1012,3 +1012,10 @@ textarea {
 .top:hover{
   background: var(--nav-bg);
 }
+iframe{
+  margin-top:100px;
+  width:100%;
+  height:calc( 100vh - 104px );
+  outline:none;
+  border: none;
+}
