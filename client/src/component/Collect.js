@@ -26,7 +26,7 @@ const Collect = ({category, isLoading})=>{
 
                   {property.reviewers.length !== 0 && (
                     <a href="#" className="authot-text">
-                      Intrested Users
+                 Interested Users
                     </a>
                   )}
                 </div>

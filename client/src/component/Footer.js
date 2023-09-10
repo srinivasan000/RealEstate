@@ -4,7 +4,7 @@ const Footer = (props) => {
   return (
     <div className="footer-container">
       <p>
-        <a href="https://srinivasan000.github.io">srinivasan000</a>
+        <a href="https://srinivasan000.github.io" target="_blank" >srinivasan000</a>
       </p>
       <p>
         <a href="http://srinivasan.unaux.com" target=" ">
@@ -22,12 +22,12 @@ const Footer = (props) => {
         </a>
       </p>
       <p>
-        <a href="https://linkedin.com/en/@srinivasan000" target=" ">
+        <a href="https://linkedin.com/in/srinivasan000" target=" ">
           LinkedIn
         </a>
       </p>
       <p>
-        <a href="https://instagram.com/@srinivasan000" target=" ">
+        <a href="https://instagram.com/s.srinivasan000" target=" ">
           Instagram
         </a>
       </p>

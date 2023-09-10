@@ -24,7 +24,7 @@ const Live = ({ properties }) => {
 
                   {property.reviewers.length !== 0 && (
                     <a href="#" className="authot-text">
-                      Intrested Users
+                      Interested Users
                     </a>
                   )}
                 </div>

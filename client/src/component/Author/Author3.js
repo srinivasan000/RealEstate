@@ -54,7 +54,7 @@ const Author3 = ({ properties, author }) => {
 
                 {property.reviewers.length !== 0 && (
                   <a href="#" className="authot-text">
-                    Intrested Users
+                    Interested Users
                   </a>
                 )}
               </div>
@@ -97,7 +97,7 @@ const Author3 = ({ properties, author }) => {
 
                     {property.reviewers.length !== 0 && (
                       <a href="#" className="authot-text">
-                        Intrested Users
+                        Interested Users
                       </a>
                     )}
                   </div>
