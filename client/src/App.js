@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 
-// internal
+// internal 
 import {
   Header,
   Banner,
